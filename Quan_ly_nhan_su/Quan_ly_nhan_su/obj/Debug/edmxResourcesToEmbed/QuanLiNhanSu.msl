@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuanLiNhanSuModelStoreContainer" CdmEntityContainer="QuanLiNhanSuEntities">
+    <EntitySetMapping Name="BaoHiems">
+      <EntityTypeMapping TypeName="QuanLiNhanSuModel.BaoHiem">
+        <MappingFragment StoreEntitySet="BaoHiem">
+          <ScalarProperty Name="MaBH" ColumnName="MaBH" />
+          <ScalarProperty Name="LoaiBH" ColumnName="LoaiBH" />
+          <ScalarProperty Name="Ngaycap" ColumnName="Ngaycap" />
+          <ScalarProperty Name="Noicap" ColumnName="Noicap" />
+          <ScalarProperty Name="MaNV" ColumnName="MaNV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChucVus">
+      <EntityTypeMapping TypeName="QuanLiNhanSuModel.ChucVu">
+        <MappingFragment StoreEntitySet="ChucVu">
+          <ScalarProperty Name="MaCV" ColumnName="MaCV" />
+          <ScalarProperty Name="TenCV" ColumnName="TenCV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HopDongs">
+      <EntityTypeMapping TypeName="QuanLiNhanSuModel.HopDong">
+        <MappingFragment StoreEntitySet="HopDong">
+          <ScalarProperty Name="MaHD" ColumnName="MaHD" />
+          <ScalarProperty Name="LoaiHD" ColumnName="LoaiHD" />
+          <ScalarProperty Name="TuNgay" ColumnName="TuNgay" />
+          <ScalarProperty Name="DenNgay" ColumnName="DenNgay" />
+          <ScalarProperty Name="MaNV" ColumnName="MaNV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Luongs">
+      <EntityTypeMapping TypeName="QuanLiNhanSuModel.Luong">
+        <MappingFragment StoreEntitySet="Luong">
+          <ScalarProperty Name="MaLuong" ColumnName="MaLuong" />
+          <ScalarProperty Name="LuongCB" ColumnName="LuongCB" />
+          <ScalarProperty Name="HSLuong" ColumnName="HSLuong" />
+          <ScalarProperty Name="HSPhuCap" ColumnName="HSPhuCap" />
+          <ScalarProperty Name="BHYT" ColumnName="BHYT" />
+          <ScalarProperty Name="BHXH" ColumnName="BHXH" />
+          <ScalarProperty Name="BHTN" ColumnName="BHTN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nguoidungs">
+      <EntityTypeMapping TypeName="QuanLiNhanSuModel.Nguoidung">
+        <MappingFragment StoreEntitySet="Nguoidung">
+          <ScalarProperty Name="Taikhoan" ColumnName="Taikhoan" />
+          <ScalarProperty Name="matkhau" ColumnName="matkhau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhanViens">
+      <EntityTypeMapping TypeName="QuanLiNhanSuModel.NhanVien">
+        <MappingFragment StoreEntitySet="NhanVien">
+          <ScalarProperty Name="MaNV" ColumnName="MaNV" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="Ngaysinh" ColumnName="Ngaysinh" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="DanToc" ColumnName="DanToc" />
+          <ScalarProperty Name="QueQuan" ColumnName="QueQuan" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="MaPB" ColumnName="MaPB" />
+          <ScalarProperty Name="MaCV" ColumnName="MaCV" />
+          <ScalarProperty Name="MaLuong" ColumnName="MaLuong" />
+          <ScalarProperty Name="MaTD" ColumnName="MaTD" />
+          <ScalarProperty Name="tenanh" ColumnName="tenanh" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhongBans">
+      <EntityTypeMapping TypeName="QuanLiNhanSuModel.PhongBan">
+        <MappingFragment StoreEntitySet="PhongBan">
+          <ScalarProperty Name="MaPB" ColumnName="MaPB" />
+          <ScalarProperty Name="TenPb" ColumnName="TenPb" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="QuanLiNhanSuModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrinhDoHVs">
+      <EntityTypeMapping TypeName="QuanLiNhanSuModel.TrinhDoHV">
+        <MappingFragment StoreEntitySet="TrinhDoHV">
+          <ScalarProperty Name="MaTD" ColumnName="MaTD" />
+          <ScalarProperty Name="TenTDHV" ColumnName="TenTDHV" />
+          <ScalarProperty Name="ChuyenNganh" ColumnName="ChuyenNganh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="QuanLiNhanSuModel.Store.DanhsachNV" FunctionImportName="DanhsachNV">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLiNhanSuModel.DanhsachNV_Result">
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="Họ_và_tên" ColumnName="Họ và tên" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="Giới_tính" ColumnName="Giới tính" />
+          <ScalarProperty Name="Phòng_Ban" ColumnName="Phòng Ban" />
+          <ScalarProperty Name="Chức_vụ" ColumnName="Chức vụ" />
+          <ScalarProperty Name="Trình_độ_học_vấn" ColumnName="Trình độ học vấn" />
+          <ScalarProperty Name="Chuyên_ngành" ColumnName="Chuyên ngành" />
+          <ScalarProperty Name="Dân_tộc" ColumnName="Dân tộc" />
+          <ScalarProperty Name="Quê_quán" ColumnName="Quê quán" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="QuanLiNhanSuModel.Store.DanhsachNV1" FunctionImportName="DanhsachNV1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLiNhanSuModel.DanhsachNV1_Result">
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="Họ_và_tên" ColumnName="Họ và tên" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="Giới_tính" ColumnName="Giới tính" />
+          <ScalarProperty Name="Phòng_Ban" ColumnName="Phòng Ban" />
+          <ScalarProperty Name="Chức_vụ" ColumnName="Chức vụ" />
+          <ScalarProperty Name="Trình_độ_học_vấn" ColumnName="Trình độ học vấn" />
+          <ScalarProperty Name="Chuyên_ngành" ColumnName="Chuyên ngành" />
+          <ScalarProperty Name="Dân_tộc" ColumnName="Dân tộc" />
+          <ScalarProperty Name="Quê_quán" ColumnName="Quê quán" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="QuanLiNhanSuModel.Store.NhanVienhopdong" FunctionImportName="NhanVienhopdong">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLiNhanSuModel.NhanVienhopdong_Result">
+          <ScalarProperty Name="Họ_tên" ColumnName="Họ tên" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="Giới_tính" ColumnName="Giới tính" />
+          <ScalarProperty Name="Thời_hạn" ColumnName="Thời hạn" />
+          <ScalarProperty Name="Chức_vụ" ColumnName="Chức vụ" />
+          <ScalarProperty Name="Phòng_ban" ColumnName="Phòng ban" />
+          <ScalarProperty Name="Quê_quán" ColumnName="Quê quán" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="QuanLiNhanSuModel.Store.Nhanvienlaunam" FunctionImportName="Nhanvienlaunam">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLiNhanSuModel.Nhanvienlaunam_Result">
+          <ScalarProperty Name="Họ_tên" ColumnName="Họ tên" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="Giới_tính" ColumnName="Giới tính" />
+          <ScalarProperty Name="Chức_vụ" ColumnName="Chức vụ" />
+          <ScalarProperty Name="Phòng_ban" ColumnName="Phòng ban" />
+          <ScalarProperty Name="Quê_quán" ColumnName="Quê quán" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="QuanLiNhanSuModel.Store.Nhanvienmoi" FunctionImportName="Nhanvienmoi">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLiNhanSuModel.Nhanvienmoi_Result">
+          <ScalarProperty Name="Họ_tên" ColumnName="Họ tên" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="Giới_tính" ColumnName="Giới tính" />
+          <ScalarProperty Name="Chức_vụ" ColumnName="Chức vụ" />
+          <ScalarProperty Name="Phòng_ban" ColumnName="Phòng ban" />
+          <ScalarProperty Name="Quê_quán" ColumnName="Quê quán" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="QuanLiNhanSuModel.Store.Nhanvienphongban" FunctionImportName="Nhanvienphongban">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLiNhanSuModel.Nhanvienphongban_Result">
+          <ScalarProperty Name="Họ_và_tên" ColumnName="Họ và tên" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="Giới_tính" ColumnName="Giới tính" />
+          <ScalarProperty Name="Chức_vụ" ColumnName="Chức vụ" />
+          <ScalarProperty Name="Trình_độ_học_vấn" ColumnName="Trình độ học vấn" />
+          <ScalarProperty Name="Chuyên_ngành" ColumnName="Chuyên ngành" />
+          <ScalarProperty Name="Dân_tộc" ColumnName="Dân tộc" />
+          <ScalarProperty Name="Quê_quán" ColumnName="Quê quán" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="QuanLiNhanSuModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="QuanLiNhanSuModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="QuanLiNhanSuModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="QuanLiNhanSuModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLiNhanSuModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="QuanLiNhanSuModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLiNhanSuModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="QuanLiNhanSuModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="QuanLiNhanSuModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="sua" FunctionName="QuanLiNhanSuModel.Store.sua" />
+    <FunctionImportMapping FunctionImportName="thaydoiluong" FunctionName="QuanLiNhanSuModel.Store.thaydoiluong" />
+    <FunctionImportMapping FunctionImportName="xoanv" FunctionName="QuanLiNhanSuModel.Store.xoanv" />
+    <FunctionImportMapping FunctionImportName="xoapb" FunctionName="QuanLiNhanSuModel.Store.xoapb" />
+  </EntityContainerMapping>
+</Mapping>
