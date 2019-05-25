@@ -43,7 +43,7 @@ namespace Quan_ly_nhan_su
             else
             {
 
-                string query = "select MaPB N'Mã phòng ban',TenPB N'Tên phòng ban',SDT N'Số điện thoại',Diachi N'Địa chỉ' from dbo.PhongBan where MaPB like '%" + tb_timkiem.Text + "%' or TenPB like N'" + tb_timkiem.Text + "%'";
+                string query = "select MaPB N'Mã phòng ban',TenPB N'Tên phòng ban',SDT N'Số điện thoại',Diachi N'Địa chỉ' from dbo.PhongBan where MaPB like '" + tb_timkiem.Text + "%' or MaPB like '%" + tb_timkiem.Text + "' or TenPB like N'" + tb_timkiem.Text + "%' or TenPB like N'%" + tb_timkiem.Text + "'";
                 dataGridView1.DataSource = DataNhanSu.Danhsach(query).Tables[0];
             }
         }
