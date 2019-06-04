@@ -78,9 +78,9 @@
             // 
             // tb_dantoc
             // 
-            this.tb_dantoc.Location = new System.Drawing.Point(104, 175);
+          /* this.tb_dantoc.Location = new System.Drawing.Point(104, 175);
             this.tb_dantoc.Name = "tb_dantoc";
-            this.tb_dantoc.Size = new System.Drawing.Size(100, 20);
+            this.tb_dantoc.Size = new System.Drawing.Size(100, 20);*/
             this.tb_dantoc.TabIndex = 3;
             // 
             // tb_ma
